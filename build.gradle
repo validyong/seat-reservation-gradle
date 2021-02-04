@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'application'
+
+group 'my_com.seat_reservation_gradle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.jfoenix:jfoenix:8.0.10'
+    compile fileTree(dir: 'src/main/resources/lib', include: '*.jar')
+    testCompile "junit:junit:4.13-beta-3"
+    testCompile "org.testfx:testfx-core:4.0.16-alpha"
+    testCompile "org.testfx:testfx-junit:4.0.4-alpha"
+}

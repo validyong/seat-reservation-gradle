@@ -1,0 +1,64 @@
+.my-button {
+    -fx-background-color: Dimgray;
+    -fx-text-fill: Gainsboro;
+}
+
+.my-anchor-pane {
+    -fx-background-color: #4d4d4d;
+}
+
+.title-bar {
+    -fx-padding: 10px;
+    -fx-background-color: Dimgray;
+}
+
+.my-hyperlink {
+    -fx-text-fill: Gainsboro;
+    -fx-border-color: null;
+    -fx-border-style: solid;
+    -fx-border-width: 0px;
+    -fx-underline: false;
+    -fx-text-alignment: left;
+}
+
+.my-seat-button {
+    -fx-background-color: Gainsboro;
+}
+
+.my-reserved-seat-button {
+    -fx-background-color: gray;
+}
+
+.my-seat-horizontal-box {
+    -fx-spacing: 10;
+}
+
+.my-text {
+    -fx-text-fill: gainsboro;
+    -jfx-label-float: true;
+}
+
+.my-hamburger StackPane {
+    -fx-background-color: Gainsboro;
+}
+
+.my-disable-but-opacity1:disabled {
+    -fx-opacity: 1.0;
+}
+
+.my-prompt-text {
+    -fx-prompt-text-fill: gray;
+}
+
+.my-image {
+    -fx-background-color: transparent;
+}
+
+.my-tree-tableview {
+    -fx-background-color: Dimgray;
+    -fx-border-color: gainsboro;
+}
+.my-column {
+    -fx-background-color: Dimgray;
+    -fx-border-color: gainsboro;
+}

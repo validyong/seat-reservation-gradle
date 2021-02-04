@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="my-anchor-pane" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my_com.seat_reservation_gradle.controllers.ViewList">
+    <children>
+      <HBox layoutX="20.0" layoutY="20.0" prefHeight="29.0" prefWidth="200.0">
+         <children>
+            <JFXNodesList>
+               <children>
+                  <JFXHamburger prefHeight="29.0" prefWidth="38.0" styleClass="my-hamburger" stylesheets="@../css/style.css" />
+                  <HBox prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="listLink" onAction="#listLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="List">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="39.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="seatLink" onAction="#seatLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Seat">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="60.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="reserveLink" onAction="#reserveLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Reserve">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="81.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="changeLink" onAction="#changeLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Change">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="81.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="cancelLink" onAction="#cancelLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Cancel">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+               </children>
+            </JFXNodesList>
+            <Hyperlink fx:id="menuLink" onAction="#menuLinkClicked" prefHeight="31.0" prefWidth="111.0" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Seat Reservation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+        <JFXTreeTableView fx:id="table" layoutX="56.0" layoutY="96.0" prefHeight="208.0" prefWidth="489.0" styleClass="my-tree-tableview" stylesheets="@../css/style.css">
+            <columns>
+                <JFXTreeTableColumn fx:id="idColumn" minWidth="0.0" prefWidth="63.0" text="ID" />
+                <JFXTreeTableColumn fx:id="statusColumn" minWidth="0.0" prefWidth="70.0" text="Status" />
+                <JFXTreeTableColumn fx:id="firstNameColumn" minWidth="0.0" prefWidth="135.0" text="First Name" />
+                <JFXTreeTableColumn fx:id="lastNameColumn" minWidth="0.0" prefWidth="138.0" text="Last Name" />
+                <JFXTreeTableColumn fx:id="genderColumn" minWidth="0.0" prefWidth="81.0" text="Gender" />
+            </columns>
+        </JFXTreeTableView>
+    </children>
+</AnchorPane>

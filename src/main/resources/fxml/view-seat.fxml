@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" styleClass="my-anchor-pane" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my_com.seat_reservation_gradle.controllers.ViewSeat">
+    <children>
+        <HBox alignment="TOP_CENTER" layoutX="12.0" layoutY="186.0" prefHeight="52.0" prefWidth="577.0" styleClass="my-seat-horizontal-box" stylesheets="@../css/style.css">
+            <children>
+                <JFXButton fx:id="jfxButton1" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="1" />
+                <JFXButton fx:id="jfxButton2" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="2" />
+                <JFXButton fx:id="jfxButton3" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="3" />
+                <JFXButton fx:id="jfxButton4" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="4" />
+                <JFXButton fx:id="jfxButton5" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="5" />
+                <JFXButton fx:id="jfxButton6" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="6" />
+                <JFXButton fx:id="jfxButton7" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="7" />
+                <JFXButton fx:id="jfxButton8" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="8" />
+                <JFXButton fx:id="jfxButton9" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="9" />
+                <JFXButton fx:id="jfxButton10" onAction="#jfxButtonClicked" prefHeight="50.0" prefWidth="50.0" styleClass="my-seat-button" stylesheets="@../css/style.css" text="10" />
+            </children>
+        </HBox>
+        <Text fill="GAINSBORO" layoutX="231.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat" textAlignment="CENTER" wrappingWidth="139.13671875">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <JFXNodesList fx:id="seatInfoNode" layoutX="300.0" layoutY="250.0" prefHeight="0.0" prefWidth="0.0">
+            <children>
+                <JFXButton fx:id="openNodesList" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" />
+            <HBox prefHeight="40.0" prefWidth="200.0">
+               <children>
+                      <JFXTextField fx:id="firstName" disable="true" editable="false" promptText="First Name" stylesheets="@../css/style.css">
+                     <styleClass>
+                        <String fx:value="my-text" />
+                        <String fx:value="my-prompt-text" />
+                        <String fx:value="my-disable-but-opacity1" />
+                     </styleClass>
+                      </JFXTextField>
+               </children>
+            </HBox>
+            <HBox layoutX="-90.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                      <JFXTextField fx:id="lastName" disable="true" editable="false" promptText="Last Name" stylesheets="@../css/style.css">
+                     <styleClass>
+                        <String fx:value="my-text" />
+                        <String fx:value="my-prompt-text" />
+                        <String fx:value="my-disable-but-opacity1" />
+                     </styleClass>
+                      </JFXTextField>
+               </children>
+            </HBox>
+            <HBox layoutX="-90.0" layoutY="273.0" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                      <JFXRadioButton fx:id="female" alignment="CENTER_LEFT" disable="true" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@../css/style.css" text="Female">
+                     <styleClass>
+                        <String fx:value="my-text" />
+                        <String fx:value="my-disable-but-opacity1" />
+                     </styleClass>
+                      </JFXRadioButton>
+               </children>
+            </HBox>
+            <HBox layoutX="-90.0" layoutY="273.0" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                      <JFXRadioButton fx:id="male" alignment="CENTER_LEFT" disable="true" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@../css/style.css" text="Male">
+                     <styleClass>
+                        <String fx:value="my-text" />
+                        <String fx:value="my-disable-but-opacity1" />
+                     </styleClass>
+                      </JFXRadioButton>
+               </children>
+            </HBox>
+            </children>
+        </JFXNodesList>
+      <HBox layoutX="20.0" layoutY="20.0" prefHeight="29.0" prefWidth="200.0">
+         <children>
+            <JFXNodesList>
+               <children>
+                  <JFXHamburger prefHeight="29.0" prefWidth="38.0" styleClass="my-hamburger" stylesheets="@../css/style.css" />
+                  <HBox prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="listLink" onAction="#listLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="List">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="39.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="seatLink" onAction="#seatLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Seat">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="60.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="reserveLink" onAction="#reserveLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Reserve">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="81.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="changeLink" onAction="#changeLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Change">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="-21.0" layoutY="81.0" prefHeight="20.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink fx:id="cancelLink" onAction="#cancelLinkClicked" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Cancel">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </HBox>
+               </children>
+            </JFXNodesList>
+            <Hyperlink fx:id="menuLink" onAction="#menuLinkClicked" prefHeight="31.0" prefWidth="111.0" styleClass="my-hyperlink" stylesheets="@../css/style.css" text="Seat Reservation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
